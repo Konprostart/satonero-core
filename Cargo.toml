@@ -1,3 +1,9 @@
+# Satonero fork of the MIT-licensed `mostro-core` crate.
+#
+# The crate name and version are intentionally UNCHANGED so the Satonero daemon
+# can redirect its crates.io dependency via Cargo's `[patch.crates-io]` without
+# touching the 71 files that import `mostro_core::*`. Do not rename the crate or
+# publish it to crates.io (the upstream `mostro-core` name is MostroP2P-owned).
 [package]
 name = "mostro-core"
 version = "0.17.3"
@@ -6,7 +12,7 @@ license = "MIT"
 authors = ["Francisco Calderón <negrunch@grunch.dev>"]
 description = "Mostro Core library"
 homepage = "https://mostro.network"
-repository = "https://github.com/MostroP2P/mostro-core"
+repository = "https://github.com/Konprostart/satonero-core"
 
 [lib]
 crate-type = ["cdylib", "lib"]
